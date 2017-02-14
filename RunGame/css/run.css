@@ -1,0 +1,62 @@
+body{
+    margin:0;padding:0;
+    width:100%;height:100%;
+    overflow: hidden;
+}
+canvas{
+    background: url("../img/bbb.jpg");
+    background-position: 100% 100% ;
+}
+audio{
+    position: fixed;left:0;top:0;
+    z-index: 2;
+}
+.start{
+    width:30%;height:40%;
+    position:fixed;left:0;top:0;bottom:0;right:0;
+    margin:auto;z-index: 1;
+    border:2px solid #fff;border-radius: 10px;
+    animation: start 2s ease forwards;
+}
+.gameName{
+    font-size: 36px;line-height: 150px;
+    color:#fff;
+}
+.mask{
+    width:100%;height:100%;
+    position: fixed;left:0;right:0;
+    background: rgba(0,0,0,.8);
+    animation: mask 2s ease forwards;
+}
+@keyframes start{
+    0%{
+        transform: translate(0,-1000px);
+  }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes start1{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0,-1000px);
+    }
+}
+@keyframes mask {
+    0%{
+        background: rgba(0,0,0,.0);
+    }
+    100%{
+        background: rgba(0,0,0,.8);
+    }
+}
+@keyframes mask1{
+    0%{
+        background: rgba(0,0,0,.8);
+    }
+    100%{
+        background: rgba(0,0,0,.0);
+    }
+}
